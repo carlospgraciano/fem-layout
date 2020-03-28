@@ -30,6 +30,22 @@ div img {
 	max-width: 225px; 
 }
 
+.bg-blue {
+	background-color: #0984e3;
+}
+
+.bg-red {
+	background-color: #d63031;
+}
+
+.bg-green {
+	background-color: #00b894;
+}
+
+.bg-gray {
+	background-color: #b2bec3;
+}
+
 /* grid system -- mobile first! */
 
 
@@ -39,5 +55,41 @@ div img {
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+  [class*='col-'] {
+		padding: 1.5%;
+		margin: 1% 2.5%;
+	}
 
+	.row {
+		width: 100%;
+	}
+
+	.row:after {
+		content: "";
+		display: block;
+		overflow: hidden;
+		clear: both;
+	}
+
+	.col-3 {
+		float: left;
+		width: 20%;
+		
+	}	
+
+	.col-6 {
+		float: left;
+		width: 45%;
+	}
+
+	.col-8 {
+		float: left;
+		width: 70%;
+		padding: 3%;
+	}
+
+	.col-12 {
+		float: left;
+		width: 95%;
+	}
 }
