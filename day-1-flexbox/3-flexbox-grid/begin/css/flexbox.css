@@ -30,14 +30,68 @@ div img {
 	max-width: 225px; 
 }
 
+.col-1-2,
+.col-1-4 {
+	background-color: #0984e3;
+	color: #FFFFFF;
+}
+
+.col-2 {
+	background-color: #d63031;
+	color: #FFFFFF;
+}
+
+.col-3 {
+	background-color: #00b894;
+	color: #FFFFFF;
+}
+
+.col-4 {
+	background-color: #b2bec3;
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+[class*="col-"] {
+	margin-left: 4%;
+	flex: 0 0 92%;
+}
+
 /* grid system -- mobile first! */
 
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
+	.col-1-2,
+	.col-2 {
+		flex: 0 0 44%;
+	}
 
+	.col-1-4,
+	.col-3,
+	.col-4 {
+		flex: 0 0 92%;
+	}
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+	.col-1-2,
+	.col-1-4 {
+		flex: 0 0 20%;
+	}
 
+	.col-2 {
+		flex: 0 0 44%;
+	}
+
+	.col-3 {
+		flex: 0 0 68%;
+	}
+
+	.col-4 {
+		flex: 0 0 92%;
+	}
 }
